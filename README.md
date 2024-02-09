@@ -2,6 +2,8 @@ Setup process for a Self Hosted debian machine for the trickest.io platform.
 https://trickest.io/dashboard/settings/fleet
 https://docs.trickest.io/trickest-documentation/tutorials/using-self-hosted-machines
 
+I will add setup info for more OS if/when i find the time to do so.
+
 On an debian VM with a minimal install (No GUI & only the SSH module installed): 
 
 ```
