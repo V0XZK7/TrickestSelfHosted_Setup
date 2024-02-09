@@ -1,3 +1,4 @@
+Setup process for a Self Hosted debian machine for the trickest.io platform.
 https://trickest.io/dashboard/settings/fleet
 https://docs.trickest.io/trickest-documentation/tutorials/using-self-hosted-machines
 
@@ -12,9 +13,12 @@ ufw allow 3000/tcp
 ufw allow 22/tcp
 ufw enable
 nano .bashrc
+
 ### Add the following lines
-> export TRICKEST_CLIENT_AUTH_ID="YourAuthID"
-> export TRICKEST_CLIENT_AUTH_SECRET="YourAuthSecret"
+export TRICKEST_CLIENT_AUTH_ID="YourAuthID"
+export TRICKEST_CLIENT_AUTH_SECRET="YourAuthSecret"
+### Save & exit
+
 curl https://trickest.io/download/agent/latest/init -so init.sh
 chmod +x init.sh
 ./init.sh
@@ -23,4 +27,3 @@ reboot
 ```
 
 Make sure you also enabled port forwarding on your gateway, allowing incoming connections to port 3000 and redirecting it to your VM
-
